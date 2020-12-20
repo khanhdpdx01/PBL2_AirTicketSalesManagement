@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{05f9191f-7941-4a4b-91ed-02e946f846c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{1f7d7a26-4f44-4e49-977e-b1d2657773c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ChuyenBay">
+      <UniqueIdentifier>{0a28d4d4-f61d-4729-94ba-ed453aa066df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\SanBay">
+      <UniqueIdentifier>{fcefeb89-8ccf-46b7-af7e-b6bec170d032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\MayBay">
+      <UniqueIdentifier>{dcbbbbeb-c068-4dec-9555-5d82706905bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DatVe">
+      <UniqueIdentifier>{2dea9a8e-ee8d-47d6-ae2f-9aeeaad28f1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\HangVe">
+      <UniqueIdentifier>{bdcb321a-d0af-4bf4-81f1-d874245cde52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\HanhKhach">
+      <UniqueIdentifier>{68581b45-c243-49bd-b6c0-885d8542f31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ThanhToan">
+      <UniqueIdentifier>{0a912334-7fbb-4dd0-940c-b94d48a75162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Database">
+      <UniqueIdentifier>{ac62c03b-92f0-4e25-a8cf-fef2133f8fec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Management">
+      <UniqueIdentifier>{6a94bed3-ea74-4b11-a166-54c764f8ced9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Date.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ChuyenBay.cpp">
+      <Filter>Source Files\src\ChuyenBay</Filter>
+    </ClCompile>
+    <ClCompile Include="SanBay.cpp">
+      <Filter>Source Files\src\SanBay</Filter>
+    </ClCompile>
+    <ClCompile Include="MayBay.cpp">
+      <Filter>Source Files\src\MayBay</Filter>
+    </ClCompile>
+    <ClCompile Include="DatVe.cpp">
+      <Filter>Source Files\src\DatVe</Filter>
+    </ClCompile>
+    <ClCompile Include="HangVe.cpp">
+      <Filter>Source Files\src\HangVe</Filter>
+    </ClCompile>
+    <ClCompile Include="HanhKhach.cpp">
+      <Filter>Source Files\src\HanhKhach</Filter>
+    </ClCompile>
+    <ClCompile Include="ThanhToan.cpp">
+      <Filter>Source Files\src\ThanhToan</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseConnnection.cpp">
+      <Filter>Source Files\src\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="FlightManagement.cpp">
+      <Filter>Source Files\Management</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Date.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ChuyenBay.h">
+      <Filter>Source Files\src\ChuyenBay</Filter>
+    </ClInclude>
+    <ClInclude Include="SanBay.h">
+      <Filter>Source Files\src\SanBay</Filter>
+    </ClInclude>
+    <ClInclude Include="MayBay.h">
+      <Filter>Source Files\src\MayBay</Filter>
+    </ClInclude>
+    <ClInclude Include="DatVe.h">
+      <Filter>Source Files\src\DatVe</Filter>
+    </ClInclude>
+    <ClInclude Include="HangVe.h">
+      <Filter>Source Files\src\HangVe</Filter>
+    </ClInclude>
+    <ClInclude Include="HanhKhach.h">
+      <Filter>Source Files\src\HanhKhach</Filter>
+    </ClInclude>
+    <ClInclude Include="ThanhToan.h">
+      <Filter>Source Files\src\ThanhToan</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseConnection.h">
+      <Filter>Source Files\src\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="FlightManagement.h">
+      <Filter>Source Files\Management</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
