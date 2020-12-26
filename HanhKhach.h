@@ -7,48 +7,51 @@
 #include <vector>
 #include "DatVe.h"
 #include "DatabaseConnection.h"
+#include <regex>
+#include <iomanip>
+
 using namespace std;
 class HanhKhach
 {
 private:
-	string maHanhKhach;
+	int maHanhKhach;
 	string hoTen;
 	string CMND;
 	bool gioiTinh;
 	string SDT;
 	string Email;
-	string maSoThe;
+	Date ngaySinh;
 	vector<DatVe *> datVe;
 
 public:
-	HanhKhach();
-	HanhKhach(string MaHK, string HoTen, string CMND, bool GioiTinh, string SDT, string Email, string MaSoThe);
+	HanhKhach(int = 1, string = "", string = "", bool = 1, string = "", string = "", Date = NULL);
 	~HanhKhach();
 
-	string getMaHanhKhach();
-	void setMaHanhKhach(string);
+	int getMaHanhKhach() const;
+	void setMaHanhKhach(int);
 
-	string getHoTen();
+	string getHoTen() const;
 	void setHoTen(string);
 
-	string getCMND();
+	string getCMND() const;
 	void setCMND(string);
 
-	bool getGioiTinh();
+	bool getGioiTinh() const;
 	void setGioiTinh(bool);
 
-	string getSDT();
+	string getSDT() const;
 	void setSDT(string);
 
-	string getEmail();
+	string getEmail() const;
 	void setEmail(string);
 
-	string getMaSoThe();
-	void setMaSoThe(string);
+	Date getNgaySinh() const;
+	void setNgaySinh(Date);
 
 	void addTicketClass(DatVe*);
 	friend ostream &operator<<(ostream &, const HanhKhach &);
 	friend istream &operator>>(istream &, HanhKhach &);
+	void validatePassenger(string&);
 };
 
 #endif // !_HANHKHACH_H

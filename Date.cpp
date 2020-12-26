@@ -1,5 +1,5 @@
 #include "Date.h"
-Date::Date(int minute, int hour, int day, int month, int year)
+Date::Date(int day, int month, int year, int minute, int hour)
 {
 	this->minute = minute;
 	this->hour = hour;
@@ -14,11 +14,14 @@ Date::Date(string date)
 	this->day = atoi(str[0].c_str());
 	this->month = atoi(str[1].c_str());
 	this->year = atoi(str[2].c_str());
+	this->minute = 1;
+	this->hour = 1;
 }
 
 ostream &operator<<(ostream &out, const Date &time)
 {
-	out << time.hour << ":" << time.minute << " " << time.day << "/" << time.month << "/" << time.year << endl;
+	string Time = "" + to_string(time.hour) + ':' + to_string(time.minute) + ' ' + to_string(time.day) + '/' + to_string(time.month) + '/' + to_string(time.year);
+	out << Time;
 	return out;
 }
 
@@ -110,15 +113,15 @@ Date Date::validateDate()
 		{
 			if (date.month < 0 || date.month > 12)
 			{
-				throw invalid_argument("month la khong hop le.\n");
+				throw invalid_argument("Thang la khong hop le.\n");
 			}
 			if (date.year > 2020 || date.year < 1900)
 			{
-				throw invalid_argument("year la khong hop le.\n");
+				throw invalid_argument("Nam la khong hop le.\n");
 			}
 			if (date.getDayNumber() < date.day || date.day < 0)
 			{
-				throw invalid_argument("day la khong hop le.\n");
+				throw invalid_argument("Ngay la khong hop le.\n");
 			}
 			flag = 1;
 		}

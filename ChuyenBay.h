@@ -4,6 +4,7 @@
 #include <iostream>
 #include "DatabaseConnection.h"
 #include "Date.h"
+#include "DatVe.h"
 #include <vector>
 #include <unordered_map>
 #include <utility>
@@ -17,7 +18,7 @@ private:
 	Date ngayGioBay;
 	Date ngayGioDen;
 	double giaGoc;
-
+	vector<DatVe*> datVe;
 public:
 	string getMaChuyenBay();
 	void setMaChuyenBay(string);
@@ -31,12 +32,10 @@ public:
 	double getGiaGoc();
 	void setGiaGoc(double);
 
-	//vector<DatVe*> getListDatVe();
+	void addDatVe(DatVe*);
+	vector<DatVe*> getListDatVe();
 
 	ChuyenBay(string = "", Date = NULL, Date = NULL, double = 0);
-	/*vector<ChuyenBay*> getRoute(string startAddress, string finishAddress);*/
-	/*vector<ChuyenBay *> getOneWayFlight(string startAddress, string finishAddress, string startDay);*/
-	//vector<ChuyenBay*> getRoundTripFlight(string startAddress, string finishAddress, string startDay, string finishDay);
 	friend ostream &operator<<(ostream &, const ChuyenBay &);
 };
 

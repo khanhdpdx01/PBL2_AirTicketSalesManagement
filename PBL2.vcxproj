@@ -23,25 +23,26 @@
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="DatVe.cpp" />
     <ClCompile Include="DatabaseConnnection.cpp" />
-    <ClCompile Include="FlightManagement.cpp" />
+    <ClCompile Include="TicketAirlineManagement.cpp" />
     <ClCompile Include="HangVe.cpp" />
     <ClCompile Include="HanhKhach.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MayBay.cpp" />
     <ClCompile Include="SanBay.cpp" />
-    <ClCompile Include="ThanhToan.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChuyenBay.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="DatVe.h" />
     <ClInclude Include="DatabaseConnection.h" />
-    <ClInclude Include="FlightManagement.h" />
+    <ClInclude Include="TicketAirlineManagement.h" />
     <ClInclude Include="HangVe.h" />
     <ClInclude Include="HanhKhach.h" />
     <ClInclude Include="MayBay.h" />
     <ClInclude Include="SanBay.h" />
-    <ClInclude Include="ThanhToan.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

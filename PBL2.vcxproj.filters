@@ -37,9 +37,6 @@
     <Filter Include="Source Files\src\HanhKhach">
       <UniqueIdentifier>{68581b45-c243-49bd-b6c0-885d8542f31d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\ThanhToan">
-      <UniqueIdentifier>{0a912334-7fbb-4dd0-940c-b94d48a75162}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\src\Database">
       <UniqueIdentifier>{ac62c03b-92f0-4e25-a8cf-fef2133f8fec}</UniqueIdentifier>
     </Filter>
@@ -69,16 +66,13 @@
     <ClCompile Include="HanhKhach.cpp">
       <Filter>Source Files\src\HanhKhach</Filter>
     </ClCompile>
-    <ClCompile Include="ThanhToan.cpp">
-      <Filter>Source Files\src\ThanhToan</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DatabaseConnnection.cpp">
       <Filter>Source Files\src\Database</Filter>
     </ClCompile>
-    <ClCompile Include="FlightManagement.cpp">
+    <ClCompile Include="TicketAirlineManagement.cpp">
       <Filter>Source Files\Management</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,23 +89,25 @@
     <ClInclude Include="MayBay.h">
       <Filter>Source Files\src\MayBay</Filter>
     </ClInclude>
-    <ClInclude Include="DatVe.h">
-      <Filter>Source Files\src\DatVe</Filter>
-    </ClInclude>
     <ClInclude Include="HangVe.h">
       <Filter>Source Files\src\HangVe</Filter>
     </ClInclude>
     <ClInclude Include="HanhKhach.h">
       <Filter>Source Files\src\HanhKhach</Filter>
     </ClInclude>
-    <ClInclude Include="ThanhToan.h">
-      <Filter>Source Files\src\ThanhToan</Filter>
-    </ClInclude>
     <ClInclude Include="DatabaseConnection.h">
       <Filter>Source Files\src\Database</Filter>
     </ClInclude>
-    <ClInclude Include="FlightManagement.h">
+    <ClInclude Include="DatVe.h">
+      <Filter>Source Files\src\DatVe</Filter>
+    </ClInclude>
+    <ClInclude Include="TicketAirlineManagement.h">
       <Filter>Source Files\Management</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -10,16 +10,14 @@ using namespace std;
 class DatVe
 {
 private:
-	string maDatVe;
+	int maDatVe;
 	int hangGheNgang;
 	int hangGheDoc;
-	Date thoigianDatVe;
 	double tongTien;
 
 public:
-	DatVe(string = "", int = 0, int = 0, Date = NULL, double = 0.0);
-	string getMaDatVe();
-	void setMaDatVe(string maDV);
+	DatVe(int = 0, int = 0, int = 0, double = 0.0);
+	int getMaDatVe();
 
 	int getHangGheNgang();
 	void setHangGheNgang(int hangGheNgang);

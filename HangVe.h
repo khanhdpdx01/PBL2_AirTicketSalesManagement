@@ -7,6 +7,7 @@
 #include <vector>
 #include "DatVe.h"
 #include "DatabaseConnection.h"
+#include <iomanip>
 
 using namespace std;
 class HangVe
@@ -32,6 +33,7 @@ public:
 
 	void addTicketClass(DatVe*);
 	friend ostream &operator<<(ostream &, const HangVe &);
+	friend istream& operator>>(istream&, HangVe&);
 };
 
 #endif // !_HANGVE_H

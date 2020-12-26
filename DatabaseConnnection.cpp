@@ -8,8 +8,7 @@ DatabaseConnection::DatabaseConnection()
 {
     try
     {
-        con.Connect(_TSA("FL"), _TSA("sa"), _TSA("123"), SA_SQLServer_Client);
-        cout << "We are connected!\n";
+        con.Connect(_TSA("TicketAirlineManagement"), _TSA("sa"), _TSA("123"), SA_SQLServer_Client);
     }
     catch (SAException &x)
     {
@@ -21,7 +20,6 @@ DatabaseConnection::DatabaseConnection()
 DatabaseConnection::~DatabaseConnection()
 {
     con.Disconnect();
-    cout << "We are disconnected!\n";
 }
 
 DatabaseConnection *DatabaseConnection::getInstance()

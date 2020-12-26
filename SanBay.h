@@ -6,6 +6,8 @@
 #include <iostream>
 #include "DatabaseConnection.h"
 #include "ChuyenBay.h"
+#include <iomanip>
+
 using namespace std;
 
 class SanBay
@@ -33,13 +35,13 @@ public:
 	string getQuocGia();
 	void setQuocGia(string quocGia);
 
-	/*unordered_map<string, string> getAircraftInfo();*/
 	void addArrivalFlight(ChuyenBay *);
 	void addLeaveFlight(ChuyenBay *);
 
 	vector<ChuyenBay*> getArrivalFlight();
 	vector<ChuyenBay*> getLeaveFlight();
 	friend ostream& operator<<(ostream&,const SanBay&);
+	friend istream& operator>>(istream&, SanBay&);
 };
 
 #endif // !_SANBAY_H

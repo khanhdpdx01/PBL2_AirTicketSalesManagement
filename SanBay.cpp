@@ -51,23 +51,6 @@ void SanBay::setQuocGia(string quocGia)
 	this->quocGia = quocGia;
 }
 
-//unordered_map<string, string> SanBay::getAircraftInfo()
-//{
-//	unordered_map<string, string> sbay;
-//	SACommand select(&db->con, _TSA("SELECT * FROM SanBay")); // create command object
-//	select.Execute();
-//
-//	SanBay *sanBay = new SanBay;
-//	while (select.FetchNext())
-//	{
-//		sanBay->maSanBay = select.Field("MaSanBay").asString();
-//		sanBay->thanhPho = select.Field("ThanhPho").asString();
-//
-//		sbay.insert(pair<string, string>(sanBay->maSanBay, sanBay->thanhPho));
-//	}
-//	return sbay;
-//}
-
 void SanBay::addArrivalFlight(ChuyenBay *chuyenBay)
 {
 	this->chuyenBayDen.push_back(chuyenBay);
@@ -79,10 +62,7 @@ void SanBay::addLeaveFlight(ChuyenBay *chuyenBay)
 }
 
 ostream& operator<<(ostream& out, const SanBay& sanBay) {
-	out << "\nMa san bay: " << sanBay.maSanBay;
-	out << "\nTen san bay: " << sanBay.tenSanBay;
-	out << "\nThanh pho: " << sanBay.thanhPho;
-	out << "\nQuoc gia: " << sanBay.quocGia;
+	out << std::left << setw(10) << sanBay.maSanBay << "|" << setw(30) << sanBay.tenSanBay << "|" << setw(30) << sanBay.thanhPho << "|" << setw(30) << sanBay.quocGia << endl;
 	return out;
 }
 
@@ -92,4 +72,12 @@ vector<ChuyenBay*> SanBay::getArrivalFlight() {
 
 vector<ChuyenBay*> SanBay::getLeaveFlight() {
 	return this->chuyenBayDi;
+}
+
+istream& operator>>(istream& in, SanBay& _sanBay) {
+	cout << "\n\t\t\t\tMa san bay: "; getline(in,_sanBay.maSanBay);
+	cout << "\n\t\t\t\tTen san bay: "; getline(in,_sanBay.tenSanBay);
+	cout << "\n\t\t\t\tThanh pho: "; getline(in,_sanBay.thanhPho);
+	cout << "\n\t\t\t\tQuoc gia: "; getline(in,_sanBay.quocGia);
+	return in;
 }

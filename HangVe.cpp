@@ -63,6 +63,16 @@ void HangVe::addTicketClass(DatVe* _datVe) {
 
 ostream& operator<<(ostream& o, const HangVe& hv)
 {
-	o << hv.maHangVe << "\t" << hv.tenHangVe << "\t" << hv.tiLeHangVe << endl;
+	cout << std::left << setw(10)  << hv.maHangVe << "|"<< setw(30) << hv.tenHangVe <<"|" <<setw(15) << setprecision(3) << fixed << hv.tiLeHangVe << endl;
 	return o;
+}
+
+istream& operator>>(istream& in, HangVe& hangVe) {
+	cout << "\n\t\t\t\tMa hang ve: ";
+	getline(in,hangVe.maHangVe);
+	cout << "\n\t\t\t\tTen hang ve: ";
+	getline(in, hangVe.tenHangVe);
+	cout << "\n\t\t\t\tTi le hang ve: ";
+	cin >> hangVe.tiLeHangVe;
+	return in;
 }
